@@ -1,3 +1,12 @@
+.content__box, .catalog__content__box, .filter__content, .products__content__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  justify-content: center;
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 96px;
+}
+
 @keyframes pulsate-fwd {
   0% {
     transform: scale(1);
@@ -248,22 +257,22 @@ header {
 
 .content__item__desc__big h3 {
   color: #F16D7F;
-  Font-family: Lato;
+  font-family: Lato;
   font-weight: 700;
-  Font-size: 24px;
-  Line-height: 29px;
-  Line-height: 100%;
-  Vertical-align: Top;
+  font-size: 24px;
+  line-height: 29px;
+  line-height: 100%;
+  vertical-align: Top;
 }
 
 .content__item__desc__big p {
   color: #fff;
-  Font-family: Lato;
+  font-family: Lato;
   font-weight: 400;
-  Font-size: 16px;
-  Line-height: 19px;
-  Line-height: 100%;
-  Vertical-align: Top;
+  font-size: 16px;
+  line-height: 19px;
+  line-height: 100%;
+  vertical-align: Top;
 }
 
 .product__content__text {
@@ -271,20 +280,11 @@ header {
 }
 
 .product__content__text h2 {
-  Font-family: Lato;
-  Font-size: 30px;
-  Line-height: 36px;
-  Line-height: 100%;
-  Vertical-align: Top;
-}
-
-.products__content__box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
-  justify-content: center;
-  gap: 30px;
-  padding-top: 60px;
-  padding-bottom: 96px;
+  font-family: Lato;
+  font-size: 30px;
+  line-height: 36px;
+  line-height: 100%;
+  vertical-align: Top;
 }
 
 .product__content {
@@ -331,32 +331,34 @@ header {
 }
 
 .product__title {
-  Font-family: Lato;
-  Font-size: 13px;
-  Line-height: 16px;
-  Line-height: 100%;
-  Vertical-align: Top;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 16px;
+  line-height: 100%;
+  vertical-align: Top;
   margin-bottom: 16px;
+  color: #000;
 }
 
 .product__text {
   margin-bottom: 16px;
-  Font-family: Lato;
-  Font-style: Light;
-  Font-size: 14px;
-  Line-height: 17px;
-  Line-height: 100%;
-  Vertical-align: Top;
+  font-family: Lato;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 17px;
+  line-height: 100%;
+  vertical-align: Top;
+  color: #000;
 }
 
 .product__price {
   color: #F16D7F;
-  Font-family: Lato;
-  Font-style: Regular;
-  Font-size: 16px;
-  Line-height: 19px;
-  Line-height: 100%;
-  Vertical-align: Top;
+  font-family: Lato;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 19px;
+  line-height: 100%;
+  vertical-align: Top;
 }
 
 .product__card-add {
@@ -515,17 +517,14 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-
 .footer__text {
   color: #FBFBFB;
   font-size: 16px;
   font-family: Lato;
 }
-
 .footer__nav {
   display: flex;
 }
-
 .footer__nav__link {
   display: flex;
   width: 31.451px;
@@ -535,13 +534,82 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .footer__nav__link:hover {
   background-color: #F16D7F;
   transition: all 0.3s;
 }
-
 .footer__nav__link:hover path {
   transition: all 0.3s;
   fill: #fff;
+}
+
+.breadcrumb {
+  background-color: #F8F3F4;
+  height: 148px;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadcrumb__content__title {
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumb__content h4 {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumb__content span {
+  color: #F16D7F;
+}
+
+.filter {
+  height: 132px;
+}
+.filter__content__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.filter__content__item h3 {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 11px;
+}
+.filter__content__item svg {
+  margin-right: 28px;
+}
+
+.pagination {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+.pagination__content {
+  width: 284px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__content svg.left {
+  margin-right: 17px;
+}
+.pagination__content svg.right {
+  margin-left: 17px;
 }/*# sourceMappingURL=style.css.map */
