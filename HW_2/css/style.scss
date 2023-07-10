@@ -37,31 +37,36 @@ img {
 
 summary {
     display: block;
-  }
+}
   
     summary::-webkit-details-marker {
     display: none;
-  }
+}
 
 .container {
     max-width: $widthSite;
     margin: 0 auto;
 }
+
 //  header
-header {
+
+.header {
     background-color: $headerColor;
+    position: relative;
+    
+    &__content {
 
-    
-    
+        display: flex;
+        min-height: 75px;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
 }
 
-.header__content {
 
-    display: flex;
-    min-height: 75px;
-    align-items: center;
-    justify-content: space-between;
-}
+
+
 
 .logo {
     display: flex;
@@ -75,25 +80,30 @@ header {
 .menu__nav {
     display: flex;
     justify-content: space-between;
-    position: relative;
     width: 168px;
     align-items: center;
 }
 
-.menu__nav:hover .menu__nav-1 {
-    display: block;
-    z-index: 1;
+#burger {
+    position: absolute;
+    left: -99999999px;
+    visibility: hidden;
+
+    &:checked ~ .menu__nav-1 {
+        right: -$widthBurgerMenu;
+    }
 }
 
 .menu__nav-1 {
-    width: max-content;
+    width: $widthBurgerMenu;
     height: 634px;
     background: #FFF;
-    display: none;
+    box-sizing: border-box;
     position: absolute;
-    top: 35px;
-    left: -50px;
+    top: 75px;
+    right: 0;
     z-index: 2;
+    transition: right .3s;
 
     &__title {
         margin-left: 32px;
