@@ -169,7 +169,6 @@ summary::-webkit-details-marker {
   width: 50%;
   transform: translate(-150px, 0);
 }
-
 .promo-right__title {
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
@@ -413,7 +412,6 @@ summary::-webkit-details-marker {
   background-color: #222224;
   color: #FBFBFB;
 }
-
 .feature__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
@@ -422,23 +420,19 @@ summary::-webkit-details-marker {
   padding-top: 103px;
   padding-bottom: 106px;
 }
-
 .feature__content__item {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
 }
-
 .feature__content__item img {
   width: 44.98px;
 }
-
 .feature__content__item h3 {
   margin-top: 28.07px;
   font-size: 19.96px;
 }
-
 .feature__content__item p {
   margin-top: 16px;
   text-align: center;
@@ -453,24 +447,20 @@ summary::-webkit-details-marker {
   background-position: center;
   background-size: cover;
 }
-
 .subscribe__content {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
 }
-
 .subscribe__info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .subscribe__info img {
   border-radius: 50%;
   margin-top: 86.59px;
 }
-
 .subscribe__info__text {
   color: #222224;
   text-align: center;
@@ -479,14 +469,12 @@ summary::-webkit-details-marker {
   text-align: center;
   margin-bottom: 126px;
 }
-
 .subscribe__rigth {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
-
 .subscribe__rigth h3 {
   color: #222224;
   text-align: center;
@@ -495,13 +483,11 @@ summary::-webkit-details-marker {
   font-weight: 700;
   margin-top: 150px;
 }
-
 .subscribe__button form {
   max-width: 341px;
   max-height: 46.9px;
   display: flex;
 }
-
 .subscribe__button button {
   width: 100px;
   height: 49px;
@@ -512,12 +498,10 @@ summary::-webkit-details-marker {
   font-family: Lato;
   padding: 0 8px;
 }
-
 .subscribe__button button:hover {
   background-color: #E05C6E;
   transition: all 0.3s;
 }
-
 .subscribe__button input {
   width: 256px;
   height: 100%;
@@ -703,13 +687,14 @@ summary::-webkit-details-marker {
 }
 
 .pagination {
-  height: 44px;
   display: flex;
   justify-content: center;
-  margin-bottom: 96px;
 }
 .pagination__content {
+  height: 44px;
   width: 284px;
+  margin-top: 48px;
+  margin-bottom: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
