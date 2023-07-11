@@ -827,6 +827,77 @@ summary {
     
 }
 
+.cart {
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__items {
+        max-width: 652px;
+        margin-top: 96px;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+    }
+
+    &__info {
+        width: 262px;
+        margin-left: 31px;
+    }
+
+    &__item svg {
+        margin-top: 28px;
+        margin-left: 57px;
+    }
+
+    &__title {
+        margin-top: 22px;
+        margin-bottom: 42px;
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        margin-bottom: 6px;
+        color: #575757;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & span {
+            color: $colorSelectText;
+        }
+    }
+
+    &__button-box {
+        margin-top: 72px;
+        margin-bottom: 128px;
+        max-height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button-link {
+        border: 1px solid #A4A4A4;
+        padding: 16px 40px;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
 
 
 
