@@ -90,11 +90,13 @@ summary {
     visibility: hidden;
 
     &:checked ~ .menu__nav-1 {
+        
         right: -$widthBurgerMenu;
     }
 }
 
 .menu__nav-1 {
+    
     width: $widthBurgerMenu;
     height: 634px;
     background: #FFF;
@@ -149,11 +151,11 @@ summary {
 
     & a {
         display: block;
+        color: #6F6E6E;
     }
 
     & li {
         display: block;
-        color: #6F6E6E;
         font-size: 14px;
         font-family: Lato;
         font-style: normal;
@@ -496,7 +498,7 @@ summary {
     &__content {
     
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: baseline;
     }
 
@@ -618,7 +620,7 @@ summary {
 
 //  breadcrumb
 
-.breadcrumb {
+.breadcrumbs {
     background-color: #F8F3F4;
     height: 148px;
     display: flex;
@@ -637,20 +639,39 @@ summary {
             font-weight: 400;
             line-height: normal;
         }
-    
-        & h4 {
-            color: #636363;
-            font-family: Lato;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
-    
-        & span {
-            color: #F16D7F;
-        }
         
+    }
+
+    &__box {
+
+    }
+
+    &__ul {
+        display: flex;
+        list-style-type: none;
+        
+    }
+
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding: 0 8px;
+        color: #636363;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__li:last-child .breadcrumbs__link {
+        color: $colorSelectText;
+        font-weight: 700;
+    }
+
+    &__link {
+        color: #636363;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    
     }
 
     
@@ -844,14 +865,16 @@ summary {
 
 .cart {
 
-    &__items {
+    &__content {
         display: flex;
-        flex-direction: column;
     }
 
     &__items {
-        max-width: 652px;
+        display: flex;
+        flex-direction: column;
+        min-width: 652px;
         margin-top: 96px;
+        margin-right: 128px;
         gap: 40px;
     }
 
@@ -910,8 +933,109 @@ summary {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
+        &:hover {
+            background-color: $buttonHoverColor;
+            color: #fff;
+            transition: all 0.3s;
+        }
     }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        min-width: 360px;
+        margin-top: 96px;
+
+        &-get {
+            &__title {
+                width: 100%;
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            & input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 45px;
+                margin-bottom: 20px;
+                padding: 0 17px;
+                color: #222;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            &__button {
+                width: 101px;
+                height: 35px;
+                color: #4A4A4A;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:hover {
+                    background-color: $buttonHoverColor;
+                    color: #fff;
+                    transition: all 0.3s; 
+                }
+            }
+        }
+
+        &-checkout {
+            background-color: #F5F3F3;
+            height: 214px;
+            margin-top: 57px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            &__sub {
+                margin-top: 39px;
+                margin-right: 34px;
+                color: #4A4A4A;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &__grand {
+                margin-top: 12px;
+                margin-right: 34px;
+                margin-bottom: 39px;
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            & a {
+                background-color: $buttonHoverColor;
+                padding: 15px 42px;
+                margin-right: 43px;
+                color: #FFF;
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+        }
+    }
+
+     
 }
+
+
 
 
 
