@@ -593,8 +593,13 @@ summary {
     min-height: 79px;
     background-color: $footerColor;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__text {
         color: #FBFBFB;
@@ -608,7 +613,7 @@ summary {
 
     &__nav__link {
         display: flex;
-        width: 31.451px;
+        width: 32px;
         height: 32px;
         background-color: #fff;
         margin-left: 7.29px;
