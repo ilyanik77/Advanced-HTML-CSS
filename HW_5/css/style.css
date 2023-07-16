@@ -88,6 +88,7 @@ summary::-webkit-details-marker {
 }
 
 .menu__nav-1 {
+  display: none;
   width: 232px;
   height: 634px;
   background: #FFF;
@@ -691,9 +692,7 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 .sort__box {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  width: 79px;
   position: absolute;
   background: #FFF;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
@@ -704,9 +703,12 @@ summary::-webkit-details-marker {
 }
 .sort__check {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 9px;
-  align-items: center;
+  width: 79px;
+}
+.sort__check input {
+  margin-right: 9px;
 }
 
 .pagination {
@@ -968,4 +970,103 @@ summary::-webkit-details-marker {
 }
 .registration__perks__li img {
   margin-right: 23px;
+}
+
+.description {
+  display: flex;
+  width: 100vw;
+}
+.description .dashicons-arrow {
+  margin-top: 373px;
+  padding: 8px;
+  background-color: #ddd7d7;
+  width: 47px;
+  height: 47px;
+}
+.description__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description__content__img {
+  margin-top: 11px;
+  margin-bottom: 42px;
+  align-items: center;
+}
+.description__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description__product h4 {
+  margin-top: 65px;
+  margin-bottom: 12px;
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.description__product h3 {
+  margin-top: 12px;
+  margin-bottom: 48px;
+  color: #4D4D4D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.description__product__text {
+  width: 555px;
+  color: #5E5E5E;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.description__product__price {
+  margin-top: 32px;
+  margin-bottom: 65px;
+  color: #EF5B70;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.description__product .sort {
+  margin-top: 65px;
+}
+.description__button {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+.description__button__link {
+  width: 212px;
+  height: 49px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F16D7F;
+  border: 2px solid #F16D7F;
+}
+.description__button__link svg {
+  color: #F16D7F;
+  margin-right: 23px;
+}
+.description__button__link:hover {
+  color: #fff;
+  background-color: #F16D7F;
+}
+.description__button__link:hover path {
+  fill: #fff;
+}
+.description__product-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 128px;
+  margin-bottom: 128px;
 }/*# sourceMappingURL=style.css.map */

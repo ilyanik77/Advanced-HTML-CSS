@@ -1,0 +1,7 @@
+.content__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px) ;
+    justify-content: center;
+    gap: 30px;
+    
+}

@@ -96,7 +96,7 @@ summary {
 }
 
 .menu__nav-1 {
-    
+    display: none;
     width: $widthBurgerMenu;
     height: 634px;
     background: #FFF;
@@ -810,9 +810,10 @@ summary {
     }
 
     &__box {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+        //display: flex;
+        //flex-direction: column;
+        width: 79px;
+        // gap: 8px;
         position: absolute;
         background: #FFF;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
@@ -823,10 +824,16 @@ summary {
     }
 
     &__check {
+        
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        //flex-wrap: wrap;
         gap: 9px;
-        align-items: center;
+        width: 79px;
+
+        & input {
+            margin-right: 9px;
+        }
 
     }
 }
@@ -1155,6 +1162,125 @@ summary {
                 margin-right: 23px;
             }
         }
+    }
+}
+
+.description {
+    display: flex;
+    width: 100vw;
+
+    .dashicons-arrow {
+        margin-top: 373px;
+        padding: 8px;
+        background-color: #ddd7d7;
+        width: 47px;
+        height: 47px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            margin-top: 11px;
+            margin-bottom: 42px;
+            align-items: center;
+        }
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h4 {
+            margin-top: 65px;
+            margin-bottom: 12px;
+            color: #F16D7F;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        & h3 {
+
+            margin-top: 12px;
+            margin-bottom: 48px;
+            color: #4D4D4D;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__text {
+
+            width: 555px;
+            color: #5E5E5E;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__price {
+
+            margin-top: 32px;
+            margin-bottom: 65px;
+            color: #EF5B70;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        & .sort {
+            margin-top: 65px;
+        }
+    }
+
+    &__button {
+
+        display: flex;
+        margin-top: 48px;
+        margin-bottom: 64px;
+
+        &__link {
+            width: 212px;
+            height: 49px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $buttonHoverColor;
+            border: 2px solid $buttonHoverColor;
+
+            & svg {
+                color: $buttonHoverColor;
+                margin-right: 23px;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: $buttonHoverColor;
+            }
+
+            &:hover path {
+                fill: #fff;
+            }
+        }
+        
+    }
+
+    &__product-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 128px;
+        margin-bottom: 128px;
     }
 }
 
