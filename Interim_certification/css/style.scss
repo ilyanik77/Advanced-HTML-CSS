@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'extends';
 
+
 @keyframes pulsate-fwd {
     0% {
       transform: scale(1);
@@ -1049,6 +1050,8 @@ summary {
      
 }
 
+//  registration
+
 .registration {
 
     &__content {
@@ -1161,6 +1164,8 @@ summary {
         }
     }
 }
+
+//
 
 .description {
     display: flex;
