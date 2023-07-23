@@ -381,6 +381,12 @@ summary {
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
+
+                &:hover {
+                    background-color: #E05C6E;
+                    transition: all 0.3s;
+
+                }
             }
 
         }

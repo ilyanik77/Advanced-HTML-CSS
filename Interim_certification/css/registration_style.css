@@ -244,6 +244,10 @@ summary::-webkit-details-marker {
   padding: 16px 20px 17px 29px;
   align-items: center;
 }
+.registration__form__but:hover {
+  background-color: #E05C6E;
+  transition: all 0.3s;
+}
 .registration__form__but img {
   margin-left: 20px;
   margin-right: 20px;

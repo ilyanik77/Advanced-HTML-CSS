@@ -335,6 +335,10 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
 }
+.cart__form-checkout a:hover {
+  background-color: #E05C6E;
+  transition: all 0.3s;
+}
 
 .subscribe {
   min-height: 448px;
